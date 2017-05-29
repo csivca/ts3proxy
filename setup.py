@@ -3,6 +3,7 @@ from setuptools import setup, find_packages
 
 install_requires = [
     "PyYAML",
+    "ts3"
 ]
 
 setup(

@@ -1,4 +1,4 @@
-ts3server:
+ts3Server:
   enabled: True
   relayAddress: 0.0.0.0
   relayPort: 9987
@@ -16,4 +16,10 @@ ts3ServerQuery:
   relayPort: 10011
   remoteAddress: 127.0.0.1
   remotePort: 10011
-
+ts3Weblist:
+  enabled: True
+  remoteAddress: 127.0.0.1
+  queryPort: 10011
+  serverPort: 9987
+  queryLogin: serveradmin
+  queryPassword: 123456
