@@ -1,12 +1,34 @@
+system:
+  logLevel: DEBUG
+  logfile: /var/log/system.log
+  # announce only if you have one virtual ts3 server. won't work otherwise.
+  announceServer: True
+  serverName: Ts3Proxy
+  maxUsers: 100
 ts3server:
+  enabled: True
   relayPort: 9987
-  remoteAddr: 127.0.0.1
+  remoteAddr: 51.38.119.22
   remotePort: 9987
+  #relayAddress: 0.0.0.0
+  # relayPort:remoteAddress:remotePort
+  # multiple servers splitted by ","
+  #servers: "9987:127.0.0.1:9987"
+  blacklist: blacklist.txt
+  whitelist: whitelist.txt
 ts3FileTransfer:
-  relayPort: 30033
-  remoteAddr: 127.0.0.1
-  remotePort: 30033
+  enabled: True
+  # relayAddress: 0.0.0.0
+  relayPort: 33033
+  remoteAddr: 51.38.119.22
+  remotePort: 33033
+  blacklist: blacklist.txt
+  whitelist: whitelist.txt
 ts3ServerQuery:
-  relayPort: 10011
-  remoteAddr: 127.0.0.1
-  remotePort: 10011
+  enabled: True
+  # relayAddress: 0.0.0.0
+  relayPort: 44044
+  remoteAddr: 51.38.119.22
+  remotePort: 44044
+  blacklist: blacklist.txt
+  whitelist: whitelist.txt
